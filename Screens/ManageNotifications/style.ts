@@ -28,33 +28,6 @@ export const NextBTN = styled.TouchableOpacity`
     align-items: center;
 `;
 
-export const ExitBTN = styled.TouchableOpacity`
-    position: absolute;
-    width: 85%;
-    height: 22%;
-    margin-left: 7%;
-    margin-top: 20%;
-    background-color: white;
-    color: black;
-    align-items: center;
-    borderWidth: 1px;
-    borderColor: red;
-`;
-
-export const Next = styled.Text`
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    margin-top: 4%;
-    text-align: center;
-`;
-
-export const Exit = styled.Text`
-    font-size: 18px;
-    color: red;
-    margin-top: 4%;
-    text-align: center;
-`;
 
 export const Footer = styled.View`
     width: 120%;
@@ -80,9 +53,8 @@ export const BackBtn = styled.TouchableOpacity`
 
 export const Form = styled.View`
     flex: 1;
-    background-color: white;
-    padding: 20px;
-    align-items: center;
+    width: 380px;
+    height: 500px;
 `;
 
 export const TitleView = styled.View`
@@ -121,11 +93,11 @@ export const NameInput = styled.TextInput`
 
 
 export const InputView = styled.View`
-    position: absolute;
-    flex: 1;
-    width: 120%;
-    height: 50%;
+    position: relative;
+    width: 400px;
+    height: 900px;
     margin-top: 20%;
+    padding: 0px;
     background-color: white;
 `;
 
@@ -168,8 +140,6 @@ export const MensagensInformativas = styled.View`
     position: absolute;
     margin-left: 4%;
     margin-top: 6%;
-    borderWidth: 1px;
-    borderColor: red;
 `;
 
 export const MensagensPromocionais = styled.View`
@@ -178,8 +148,6 @@ export const MensagensPromocionais = styled.View`
     position: absolute;
     margin-left: 4%;
     margin-top: 65%;
-    borderWidth: 1px;
-    borderColor: blue;
 `;
 
 export const Pesquisas = styled.View`
@@ -188,18 +156,14 @@ export const Pesquisas = styled.View`
     position: absolute;
     margin-left: 4%;
     margin-top: 128%;
-    borderWidth: 1px;
-    borderColor: blue;
 `;
 
 export const ComunicacoesEspeciais = styled.View`
-    height: 22%;
+    height: 50%;
     width: 90%;
     position: absolute;
     margin-left: 4%;
-    margin-top: 128%;
-    borderWidth: 1px;
-    borderColor: blue;
+    margin-top: 158%;
 `;
 
 export const SMS = styled.View`

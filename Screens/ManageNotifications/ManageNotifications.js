@@ -1,17 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState, useRef } from 'react';
-import { StyleSheet, Text, View, Switch } from 'react-native';
+import { StyleSheet, Text, View, Switch, ScrollView, SectionList } from 'react-native';
 import {
     Container,
-    Header, NextBTN, Next, Footer,
+    Header,
     BackIcon, BackBtn,
     Title,
     Form,
     InputView,
     NameView,
-    NameInput,
-    ExitBTN,
-    Exit,
     Description,
     Options,
     DescOption,
@@ -22,7 +19,8 @@ import {
     Email,
     Napp,
     MensagensPromocionais,
-    Pesquisas
+    Pesquisas,
+    ComunicacoesEspeciais,
 } from './style';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
@@ -35,47 +33,46 @@ export default function ManageNotifications({ navigation }) {
     const name = useRef();
 
     const [isEnabled, setIsEnabled] = useState(false);
+    const [isEnabled2, setIsEnabled2] = useState(false);
+    const [isEnabled3, setIsEnabled3] = useState(false);
+    const [isEnabled4, setIsEnabled4] = useState(false);
+    const [isEnabled5, setIsEnabled5] = useState(false);
+    const [isEnabled6, setIsEnabled6] = useState(false);
+    const [isEnabled7, setIsEnabled7] = useState(false);
+
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
+    const toggleSwitch2 = () => setIsEnabled2(previousState2 => !previousState2);
+    const toggleSwitch3 = () => setIsEnabled3(previousState3 => !previousState3);
+    const toggleSwitch4 = () => setIsEnabled4(previousState4 => !previousState4);
+    const toggleSwitch5 = () => setIsEnabled5(previousState5 => !previousState5);
+    const toggleSwitch6 = () => setIsEnabled6(previousState6 => !previousState6);
+    const toggleSwitch7 = () => setIsEnabled7(previousState7 => !previousState7);
 
     return (
-        <KeyboardAwareScrollView contentContainerStyle={{ flex: 1 }}
-            behavior={Platform.OS == 'ios' ? 'padding' : 'height'}
-            keyboardVerticalOffset={90}>
+        <Container>
+            <Header>
+                <BackBtn onPress={() => navigation.goBack()}>
+                    <BackIcon
+                        source={require('../../assets/Icons/arrow-left.png')}
+                    />
+                </BackBtn>
 
-            <Container>
-                <Header>
-                    <BackBtn onPress={() => navigation.goBack()}>
-                        <BackIcon
-                            source={require('../../assets/Icons/arrow-left.png')}
-                        />
-                    </BackBtn>
+                <Title>Notificações</Title>
+            </Header>
 
-                    <Title>Notificações</Title>
-                </Header>
 
-                <Form>
-
+            <Form>
+                <ScrollView style={styles.scrollView} /* contentContainerStyle={styles.contentContainer} */
+                    scrollEnabled={true}
+                    showsVerticalScrollIndicator={false}
+                >
                     <InputView>
+
+
 
                         <Description>Escolha quais comunicações você quer receber do QuintoAndar</Description>
                         {/* <Options> Aplicar para todos os produtos</Options>
                         <DescOption>Inquilino, Proprietário e Indica Aí</DescOption> */}
-
-
-                        <NameView>
-                            {/* Nome Completo */}
-                            {/* <NameInput
-                                maxLength={250}
-                                placeholder='Ex: Joao Oliveira Silva'
-                                returnKeyType='next'
-                                onSubmitEditing={() => { name.current.focus(); }}
-                                blurOnSubmit={false}
-                                style={isInputFocused.input1 ? styles.input : styles.inputFocused}
-                                onChangeText={() => { }}
-                                onFocus={() => setInputFocused((prev) => ({ ...prev, input1: true }))}
-                                onBlur={() => setInputFocused((prev) => ({ ...prev, input1: false }))}
-                            /> */}
-                        </NameView>
 
                         <MensagensInformativas>
                             <OptionTitle>Mensagens informativas</OptionTitle>
@@ -89,7 +86,7 @@ export default function ManageNotifications({ navigation }) {
                                     ios_backgroundColor="grey"
                                     onValueChange={toggleSwitch}
                                     value={isEnabled}
-                                    style={{ marginLeft: '70%' }}
+                                    style={{ marginLeft: '50%' }}
                                 />
                             </SMS>
 
@@ -97,10 +94,10 @@ export default function ManageNotifications({ navigation }) {
                                 <GeneralOptions>E-mail</GeneralOptions>
                                 <Switch
                                     trackColor={{ false: "grey", true: "#073167" }}
-                                    thumbColor={isEnabled ? "white" : "white"}
+                                    thumbColor={isEnabled2 ? "white" : "white"}
                                     ios_backgroundColor="grey"
-                                    onValueChange={toggleSwitch}
-                                    value={isEnabled}
+                                    onValueChange={toggleSwitch2}
+                                    value={isEnabled2}
                                     style={{ marginLeft: '66%' }}
                                 />
                             </Email>
@@ -109,18 +106,13 @@ export default function ManageNotifications({ navigation }) {
                                 <GeneralOptions>Notificações do aplicativo</GeneralOptions>
                                 <Switch
                                     trackColor={{ false: "grey", true: "#073167" }}
-                                    thumbColor={isEnabled ? "white" : "white"}
+                                    thumbColor={isEnabled3 ? "white" : "white"}
                                     ios_backgroundColor="grey"
-                                    onValueChange={toggleSwitch}
-                                    value={isEnabled}
+                                    onValueChange={toggleSwitch3}
+                                    value={isEnabled3}
                                     style={{ marginLeft: '21%' }}
                                 />
                             </Napp>
-
-
-
-
-
 
                         </MensagensInformativas>
 
@@ -131,10 +123,10 @@ export default function ManageNotifications({ navigation }) {
                                 <GeneralOptions>SMS</GeneralOptions>
                                 <Switch
                                     trackColor={{ false: "grey", true: "#073167" }}
-                                    thumbColor={isEnabled ? "white" : "white"}
+                                    thumbColor={isEnabled4 ? "white" : "white"}
                                     ios_backgroundColor="grey"
-                                    onValueChange={toggleSwitch}
-                                    value={isEnabled}
+                                    onValueChange={toggleSwitch4}
+                                    value={isEnabled4}
                                     style={{ marginLeft: '70%' }}
                                 />
                             </SMS>
@@ -143,10 +135,10 @@ export default function ManageNotifications({ navigation }) {
                                 <GeneralOptions>E-mail</GeneralOptions>
                                 <Switch
                                     trackColor={{ false: "grey", true: "#073167" }}
-                                    thumbColor={isEnabled ? "white" : "white"}
+                                    thumbColor={isEnabled5 ? "white" : "white"}
                                     ios_backgroundColor="grey"
-                                    onValueChange={toggleSwitch}
-                                    value={isEnabled}
+                                    onValueChange={toggleSwitch5}
+                                    value={isEnabled5}
                                     style={{ marginLeft: '66%' }}
                                 />
                             </Email>
@@ -155,10 +147,10 @@ export default function ManageNotifications({ navigation }) {
                                 <GeneralOptions>Notificações do aplicativo</GeneralOptions>
                                 <Switch
                                     trackColor={{ false: "grey", true: "#073167" }}
-                                    thumbColor={isEnabled ? "white" : "white"}
+                                    thumbColor={isEnabled6 ? "white" : "white"}
                                     ios_backgroundColor="grey"
-                                    onValueChange={toggleSwitch}
-                                    value={isEnabled}
+                                    onValueChange={toggleSwitch6}
+                                    value={isEnabled6}
                                     style={{ marginLeft: '21%' }}
                                 />
                             </Napp>
@@ -171,25 +163,44 @@ export default function ManageNotifications({ navigation }) {
                                 <GeneralOptions>E-mail</GeneralOptions>
                                 <Switch
                                     trackColor={{ false: "grey", true: "#073167" }}
-                                    thumbColor={isEnabled ? "white" : "white"}
+                                    thumbColor={isEnabled7 ? "white" : "white"}
                                     ios_backgroundColor="grey"
-                                    onValueChange={toggleSwitch}
-                                    value={isEnabled}
+                                    onValueChange={toggleSwitch7}
+                                    value={isEnabled7}
                                     style={{ marginLeft: '66%' }}
                                 />
                             </SMS>
                         </Pesquisas>
 
+                        <ComunicacoesEspeciais>
+                            <OptionTitle>Comunicações essenciais</OptionTitle>
+                            <DescOption>Visitas agendadas, propostas e faturas</DescOption>
+
+                            <SMS>
+                                <GeneralOptions>SMS e WhatsApp</GeneralOptions>
+                            </SMS>
+
+                            <Email>
+                                <GeneralOptions>E-mail</GeneralOptions>
+                            </Email>
+
+                            <Napp>
+                                <GeneralOptions>Notificações do aplicativo</GeneralOptions>
+                            </Napp>
+
+                        </ComunicacoesEspeciais>
+
+
                     </InputView>
 
-                </Form>
+                </ScrollView>
 
-                {/* <Footer>
+            </Form>
+
+            {/* <Footer>
                 </Footer> */}
 
-            </Container>
-
-        </KeyboardAwareScrollView>
+        </Container>
 
     );
 }
@@ -203,8 +214,8 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#0571ff'
     },
-    background: {
-        flex: 1,
-
+    scrollView: {
+        flex: 0.5,
+        backgroundColor: 'white',
     },
 });
