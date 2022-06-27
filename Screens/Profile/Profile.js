@@ -122,7 +122,7 @@ export default function Profile({ navigation }) {
                             />
                         </AlternativeView>
 
-                        <NotificationBTN>
+                        <NotificationBTN onPress={() => navigation.navigate('Notifications')}>
                             <MailIcon
                                 source={require('../../assets/Icons/envelope.png')}
                             />

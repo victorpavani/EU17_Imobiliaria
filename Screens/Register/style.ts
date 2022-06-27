@@ -26,12 +26,13 @@ export const TitleWts = styled.Text`
 
 export const NextBTN = styled.TouchableOpacity`
     position: absolute;
-    width: 85%;
-    height: 28%;
+    width: 70%;
+    height: 15%;
     margin-bottom: 15%;
-    margin-left: 7%;
+    margin-left: 13%;
     margin-top: 10%;
-    background-color: black;
+    borderRadius: 8%;
+    background-color: #2C599D;
     color: black;
     align-items: center;
 `;
@@ -85,7 +86,16 @@ export const TitleView = styled.View`
 export const Title = styled.Text`
     font-weight: bold;
     font-size: 28px;
+    color: #2C599D;
+    margin-left: 5%;
+`;
+
+export const Description = styled.Text`
+    font-size: 16px;
+    padding-left: 5%;
     color: black;
+    text-align: left;
+    margin-top: 5%;
 `;
 
 
@@ -94,10 +104,11 @@ export const Name = styled.Text`
     width: 33%;
     font-size: 16px;
     fontWeight: bold;
-    color: grey;
+    color: #2C599D;
     text-align: left;
-    margin-left: 7%;
+    margin-left: 13%;
     margin-top: 2%;
+    padding-left: 1%;
     background-color: white;
     z-index: 999;
 `;
@@ -107,9 +118,10 @@ export const Email = styled.Text`
     width: 12%;
     font-size: 16px;
     fontWeight: bold;
-    color: grey;
+    color: #2C599D;
+    padding-left: 1%;
     text-align: left;
-    margin-left: 7%;
+    margin-left: 13%;
     margin-top: 12%;
     background-color: white;
     z-index: 999;
@@ -120,9 +132,10 @@ export const Cpf = styled.Text`
     width: 9%;
     font-size: 16px;
     fontWeight: bold;
-    color: grey;
+    padding-left: 1%;
+    color: #2C599D;
     text-align: left;
-    margin-left: 8%;
+    margin-left: 13%;
     margin-top: 14%;
     background-color: white;
     z-index: 999;
@@ -142,42 +155,41 @@ export const CpfInput = styled.TextInput`
     margin-left: 2%;
 `;
 
-
 export const InputView = styled.View`
     position: absolute;
     flex: 1;
     width: 120%;
     height: 50%;
-    margin-top: 40%;
+    margin-top: 45%;
     background-color: white;
 `;
 
 export const NameView = styled.View`
     height: 13%;
-    width: 90%;
+    width: 75%;
     border-radius: 8px;
     position: absolute;
-    margin-left: 5%;
+    margin-left: 10%;
     background-color: white;
     margin-top: 4%;
 `;
 
 export const MailView = styled.View`
-    height: 13%;
-    width: 93%;
+    height: 10%;
+    width: 77%;
     border-radius: 8px;
     position: absolute;
-    margin-left: 3%;
+    margin-left: 8%;
     background-color: white;
     margin-top: 21%;
 `;
 
 export const CpfView = styled.View`
-    height: 13%;
-    width: 93%;
+    height: 6%;
+    width: 77%;
     border-radius: 8px;
     position: absolute;
-    margin-left: 3%;
+    margin-left: 8%;
     background-color: white;
     margin-top: 40%;
 `;

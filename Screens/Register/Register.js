@@ -17,7 +17,8 @@ import {
     CpfInput,
     TitleView,
     NameView,
-    NameInput
+    NameInput,
+    Description
 } from './style'
 
 export default function Register({ navigation }) {
@@ -40,6 +41,7 @@ export default function Register({ navigation }) {
                 <TitleView>
 
                     <Title>Conclua o seu cadastro</Title>
+                    <Description>Insira seus dados abaixo para concluir o seu cadastro</Description>
 
                 </TitleView>
 
@@ -84,7 +86,7 @@ export default function Register({ navigation }) {
 
             <Footer>
 
-                <NextBTN onPress={() => alert('Voce concluiu seu cadastro')}>
+                <NextBTN onPress={() => navigation.navigate('Profile')}>
                     <Next>Confirmar</Next>
                 </NextBTN>
 
@@ -101,7 +103,7 @@ const styles = StyleSheet.create({
         borderColor: 'grey',
     },
     input: {
-        borderWidth: 1,
+        borderWidth: 2,
         borderRadius: 8,
         borderColor: '#0571ff'
     }

@@ -38,7 +38,8 @@ export default function Cellphone({ navigation }) {
 
                     <Title>Acesse ou crie sua conta</Title>
 
-                    <Description>Digite seu celular para entrar. Seus dados estao seguros e voce nao
+                    <Description>Digite seu celular para entrar.
+                        Seus dados estao seguros e voce nao
                         precisa de senha.
                     </Description>
 

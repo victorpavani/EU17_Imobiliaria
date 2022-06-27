@@ -22,8 +22,7 @@ export default function App() {
       >
         <Stack.Screen
           name="Home"
-          component={ManageNotifications}
-        /* component={Cellphone} */
+          component={Cellphone}
         />
 
         <Stack.Screen
@@ -39,6 +38,11 @@ export default function App() {
         <Stack.Screen
           name="Profile"
           component={Profile}
+        />
+
+        <Stack.Screen
+          name="Notifications"
+          component={ManageNotifications}
         />
 
       </Stack.Navigator>
