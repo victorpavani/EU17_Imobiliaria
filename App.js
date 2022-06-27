@@ -6,6 +6,7 @@ import Confirmation from './Screens/Confirmation/Confirmation';
 import Cellphone from './Screens/Cellphone/Cellphone';
 import Profile from './Screens/Profile/Profile';
 import ManageNotifications from './Screens/ManageNotifications/ManageNotifications';
+import Menu from './Screens/Menu Bar/Menu';
 
 
 
@@ -15,7 +16,9 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator
+      <Menu />
+
+      {/*  <Stack.Navigator
         screenOptions={{
           headerShown: false,
         }}
@@ -45,7 +48,7 @@ export default function App() {
           component={ManageNotifications}
         />
 
-      </Stack.Navigator>
+      </Stack.Navigator> */}
     </NavigationContainer>
   );
 }
