@@ -1,41 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+
 
 import Cellphone from '../Cellphone/Cellphone';
 import Register from "../Register/Register";
 import Confirmation from "../Confirmation/Confirmation";
 
+const Search = '../../assets/Menu/search.png';
+const FilledSearch = '../../assets/Menu/search-bold.png';
+
+
 const Tab = createBottomTabNavigator();
+
 
 export default function Menu() {
     return (
         <Tab.Navigator
-            screenOptions={{
-                headerShown: false,
-                tabBarStyle: {
-                    positon: 'absolute',
-                    elevation: 0,
-                    backgroundColor: 'grey',
-                    borderRadius: 0,
-                    height: 100,
-                }
-            }}
+            screenOptions={({ route }) => ({
+                tabBarIcon: ({ focused, color, size }) => {
+                    let iconName;
+
+                    if (route.name === 'Cellphone') {
+                        iconName = focused
+                            ? 'ios-information-circle'
+                            : 'ios-information-circle-outline';
+                    } else if (route.name === 'Register') {
+                        iconName = focused ? 'ios-list-box' : 'ios-list';
+                    }
+
+                    // You can return any component that you like here!
+                    return <Image />;
+                },
+                tabBarActiveTintColor: 'tomato',
+                tabBarInactiveTintColor: 'gray',
+            })}
         >
-            <Tab.Screen name='Busca' component={Cellphone}
-                options={{
-                    tabBarIcon: ({ focused }) => (
-                        <View style={{ alignItems: 'center', justifyContent: 'center', top: 10 }}
-                        <Image
-                        source={{uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png'}}
-                        resizeMode="contain"
-                        />  
-                        </View>
-    )
-}}
-/>
-    < Tab.Screen name = 'Favoritos' component = { Register } />
-            <Tab.Screen name='Meu Lar' component={Register} />
-            <Tab.Screen name='Perfil' component={Register} />
-        </Tab.Navigator >
+            <Tab.Screen name="Cellphone" component={Cellphone} />
+            <Tab.Screen name="Register" component={Register} />
+        </Tab.Navigator>
     )
 }
