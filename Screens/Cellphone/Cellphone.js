@@ -26,11 +26,6 @@ export default function Cellphone({ navigation }) {
     return (
         <Container>
             <Header>
-                <BackBtn>
-                    <BackIcon
-                        source={require('../../assets/Icons/arrow-left.png')}
-                    />
-                </BackBtn>
             </Header>
 
             <PhoneInfo>

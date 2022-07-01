@@ -70,7 +70,7 @@ export default function ManageNotifications({ navigation }) {
 
 
 
-                        <Description>Escolha quais comunicações você quer receber do QuintoAndar</Description>
+                        <Description>Escolha quais comunicações você quer receber da 17imóveis</Description>
                         {/* <Options> Aplicar para todos os produtos</Options>
                         <DescOption>Inquilino, Proprietário e Indica Aí</DescOption> */}
 
@@ -86,7 +86,7 @@ export default function ManageNotifications({ navigation }) {
                                     ios_backgroundColor="grey"
                                     onValueChange={toggleSwitch}
                                     value={isEnabled}
-                                    style={{ marginLeft: '50%' }}
+                                    style={{ marginLeft: '69%' }}
                                 />
                             </SMS>
 
@@ -110,7 +110,7 @@ export default function ManageNotifications({ navigation }) {
                                     ios_backgroundColor="grey"
                                     onValueChange={toggleSwitch3}
                                     value={isEnabled3}
-                                    style={{ marginLeft: '21%' }}
+                                    style={{ marginLeft: '23%' }}
                                 />
                             </Napp>
 
@@ -151,7 +151,7 @@ export default function ManageNotifications({ navigation }) {
                                     ios_backgroundColor="grey"
                                     onValueChange={toggleSwitch6}
                                     value={isEnabled6}
-                                    style={{ marginLeft: '21%' }}
+                                    style={{ marginLeft: '23%' }}
                                 />
                             </Napp>
                         </MensagensPromocionais>

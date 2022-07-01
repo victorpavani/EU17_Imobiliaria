@@ -7,9 +7,6 @@ import Cellphone from '../Cellphone/Cellphone';
 import Register from "../Register/Register";
 import Confirmation from "../Confirmation/Confirmation";
 
-const Search = '../../assets/Menu/search.png';
-const FilledSearch = '../../assets/Menu/search-bold.png';
-
 
 const Tab = createBottomTabNavigator();
 
@@ -17,27 +14,111 @@ const Tab = createBottomTabNavigator();
 export default function Menu() {
     return (
         <Tab.Navigator
-            screenOptions={({ route }) => ({
-                tabBarIcon: ({ focused, color, size }) => {
-                    let iconName;
-
-                    if (route.name === 'Cellphone') {
-                        iconName = focused
-                            ? 'ios-information-circle'
-                            : 'ios-information-circle-outline';
-                    } else if (route.name === 'Register') {
-                        iconName = focused ? 'ios-list-box' : 'ios-list';
-                    }
-
-                    // You can return any component that you like here!
-                    return <Image />;
+            screenOptions={{
+                headerShown: false,
+                tabBarShowLabel: true,
+                tabBarStyle: {
+                    position: 'absolute',
+                    elevation: 0,
+                    backgroundColor: 'white',
+                    borderRadius: 0,
+                    height: 100,
                 },
-                tabBarActiveTintColor: 'tomato',
-                tabBarInactiveTintColor: 'gray',
-            })}
-        >
-            <Tab.Screen name="Cellphone" component={Cellphone} />
-            <Tab.Screen name="Register" component={Register} />
+                tabBarLabelStyle: {
+                    fontSize: 16,
+                    color: '#193A6F',
+                    fontWeight: 'normal'
+
+                }
+            }}>
+            <Tab.Screen
+                name="Pesquisar"
+                component={Cellphone}
+                options={{
+                    tabBarLabel: ({ focused, color, fontWeight }) => (
+                        <Text style={{ color: focused ? '#193A6F' : '#193A6F', fontWeight: focused ? "bold" : fontWeight, }}>Busca</Text>
+                    ),
+                    tabBarIcon: ({ focused, color, size }) => (
+                        <Image
+                            source={
+                                focused
+                                    ? require('../../assets/Menu/search-bold.png')
+                                    : require('../../assets/Menu/search.png')
+                            }
+                            style={{
+                                width: 28,
+                                height: 28,
+                            }}
+                        />
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name="Favoritos"
+                component={Register}
+                options={{
+                    tabBarLabel: ({ focused, color, fontWeight }) => (
+                        <Text style={{ color: focused ? '#193A6F' : '#193A6F', fontWeight: focused ? "bold" : fontWeight, }}>Favoritos</Text>
+                    ),
+                    tabBarIcon: ({ focused, color, size }) => (
+                        <Image
+                            source={
+                                focused
+                                    ? require('../../assets/Menu/heart-bold.png')
+                                    : require('../../assets/Menu/heart.png')
+                            }
+                            style={{
+                                width: 28,
+                                height: 28,
+                            }}
+                        />
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name="Confirmation"
+                component={Confirmation}
+                options={{
+                    tabBarLabel: ({ focused, color, fontWeight }) => (
+                        <Text style={{ color: focused ? '#193A6F' : '#193A6F', fontWeight: focused ? "bold" : fontWeight, }}>Meu Lar</Text>
+                    ),
+                    tabBarIcon: ({ focused, color, size }) => (
+                        <Image
+                            source={
+                                focused
+                                    ? require('../../assets/Menu/home-bold.png')
+                                    : require('../../assets/Menu/home.png')
+                            }
+                            style={{
+                                width: 28,
+                                height: 28,
+                            }}
+                        />
+                    ),
+                }}
+            />
+            <Tab.Screen
+                name="Usuario"
+                component={Cellphone}
+                options={{
+                    tabBarLabel: ({ focused, color, fontWeight }) => (
+                        <Text style={{ color: focused ? '#193A6F' : '#193A6F', fontWeight: focused ? "bold" : fontWeight, }}>Perfil</Text>
+                    ),
+                    tabBarIcon: ({ focused, color, size }) => (
+                        <Image
+                            source={
+                                focused
+                                    ? require('../../assets/Menu/user-bold.png')
+                                    : require('../../assets/Menu/user.png')
+                            }
+                            style={{
+                                width: 28,
+                                height: 28,
+                            }}
+                        />
+                    ),
+                }}
+            />
         </Tab.Navigator>
     )
 }
