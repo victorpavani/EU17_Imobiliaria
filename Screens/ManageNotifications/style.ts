@@ -117,7 +117,7 @@ export const Options = styled.Text`
 
 export const GeneralOptions = styled.Text`
     font-size: 18px;
-    padding-bottom: 10x%;
+    padding-bottom: 10%;
     color: black;
     text-align: left;
 `;

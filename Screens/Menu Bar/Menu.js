@@ -6,6 +6,7 @@ import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import Cellphone from '../Cellphone/Cellphone';
 import Register from "../Register/Register";
 import Confirmation from "../Confirmation/Confirmation";
+import Mapa from "../Mapa/Mapa";
 
 
 const Tab = createBottomTabNavigator();
@@ -19,7 +20,11 @@ export default function Menu() {
                 tabBarShowLabel: true,
                 tabBarStyle: {
                     position: 'absolute',
+                    flex: 1,
                     elevation: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
                     backgroundColor: 'white',
                     borderRadius: 0,
                     height: 100,
@@ -33,7 +38,7 @@ export default function Menu() {
             }}>
             <Tab.Screen
                 name="Pesquisar"
-                component={Cellphone}
+                component={Mapa}
                 options={{
                     tabBarLabel: ({ focused, color, fontWeight }) => (
                         <Text style={{ color: focused ? '#193A6F' : '#193A6F', fontWeight: focused ? "bold" : fontWeight, }}>Busca</Text>

@@ -128,7 +128,7 @@ export default function Profile({ navigation }) {
                             />
                             <Notification>Gerenciar notificações</Notification>
                             <NextIcon
-                                source={require('../../assets/Icons/right-chevron.png')}
+                                source={require('../../assets/Icons/next.png')}
                             />
                         </NotificationBTN>
 
@@ -158,12 +158,16 @@ export default function Profile({ navigation }) {
 
 const styles = StyleSheet.create({
     inputFocused: {
-        borderWidth: 1,
+        borderWidth: 2,
+        borderRadius: 9,
         borderColor: 'grey',
+        paddingLeft: 3,
     },
     input: {
-        borderWidth: 1,
-        borderColor: '#0571ff'
+        borderWidth: 2,
+        borderRadius: 9,
+        borderColor: '#0571ff',
+        paddingLeft: 3,
     },
     background: {
         flex: 1,

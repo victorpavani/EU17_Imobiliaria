@@ -107,7 +107,7 @@ export const Zone = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone2 = styled.TextInput`
@@ -116,7 +116,7 @@ export const Zone2 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone3 = styled.TextInput`
@@ -125,7 +125,7 @@ export const Zone3 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone4 = styled.TextInput`
@@ -134,7 +134,7 @@ export const Zone4 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone5 = styled.TextInput`
@@ -152,7 +152,7 @@ export const Zone6 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const InputView = styled.View`
@@ -171,21 +171,21 @@ export const InputView = styled.View`
 export const ZoneView = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
 `;
 
 export const Num2 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
 `;
 
 export const Num3 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -193,7 +193,7 @@ export const Num3 = styled.View`
 export const Num4 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -201,7 +201,7 @@ export const Num4 = styled.View`
 export const Num5 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -209,7 +209,7 @@ export const Num5 = styled.View`
 export const Num6 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -221,7 +221,7 @@ export const NextBTN = styled.TouchableOpacity`
     margin-bottom: 15%;
     margin-left: 12%;
     margin-top: 10%;
-    borderRadius: 8%;
+    borderRadius: 8;
     background-color: #193A6F;
     color: black;
     align-items: center;

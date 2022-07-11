@@ -7,6 +7,11 @@ import Cellphone from './Screens/Cellphone/Cellphone';
 import Profile from './Screens/Profile/Profile';
 import ManageNotifications from './Screens/ManageNotifications/ManageNotifications';
 import Menu from './Screens/Menu Bar/Menu';
+import HeaderMain from './Screens/Header Main/HeaderMain';
+import Mapa from './Screens/Mapa/Mapa';
+import CardImovel from './Screens/Card Movel/CardImovel';
+import HomePage from './Screens/Home Page/HomePage';
+import { Header } from './style';
 
 
 
@@ -16,16 +21,15 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Menu />
 
-      {/* <Stack.Navigator
+      <Stack.Navigator
         screenOptions={{
           headerShown: false,
         }}
       >
         <Stack.Screen
           name="Home"
-          component={Cellphone}
+          component={HeaderMain}
         />
 
         <Stack.Screen
@@ -48,7 +52,7 @@ export default function App() {
           component={ManageNotifications}
         />
 
-      </Stack.Navigator> */}
-    </NavigationContainer>
+      </Stack.Navigator>
+    </NavigationContainer >
   );
 }

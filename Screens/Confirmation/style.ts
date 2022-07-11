@@ -5,6 +5,7 @@ export const Container = styled.View`
     background-color: white;
     padding: 15px;
     align-items: center;
+
 `;
 
 export const Header = styled.View`
@@ -34,7 +35,7 @@ export const BackIcon = styled.Image`
 export const BackBtn = styled.TouchableOpacity`
     width: 30%;
     height: 30%;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-left: 10%;
 `;
 
@@ -47,36 +48,36 @@ export const PhoneInfo = styled.View`
 
 export const InfoText = styled.View`
     height: 10%;
-    width: 120%;
+    width: 100%;
     margin-top: 10%;
     margin-right: 5%;
     background-color: white;
-    align-items: left;
+    align-items: center;
 `;
 
 export const Title = styled.Text`
     font-weight: bold;
     font-size: 24px;
     color: #2C599D;
-    margin-left: 12%;
+    margin-left: 5%;
 `;
 
 export const Description = styled.Text`
-    font-size: 16px;
-    padding-left: 10%;
-    padding-right: 10%;
+    font-size: 14px;
+    padding-left: 3%;
+    padding-right: 12%;
     text-align: left;
     margin-top: 3%;
-    margin-left: 2%;
+    margin-left: -2%;
 `;
 
 export const Cellphone = styled.Text`
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
-    margin-top: 15%;
-    margin-left: 34%;
-    position: absolute;
+    margin-top: -5%;
+    margin-left: 9%;
+    z-index: 9999;
 `;
 
 export const Received = styled.TouchableOpacity`
@@ -107,7 +108,7 @@ export const Zone = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone2 = styled.TextInput`
@@ -116,7 +117,7 @@ export const Zone2 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone3 = styled.TextInput`
@@ -125,7 +126,7 @@ export const Zone3 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone4 = styled.TextInput`
@@ -134,7 +135,7 @@ export const Zone4 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone5 = styled.TextInput`
@@ -143,7 +144,7 @@ export const Zone5 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone6 = styled.TextInput`
@@ -152,7 +153,7 @@ export const Zone6 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const InputView = styled.View`
@@ -171,21 +172,21 @@ export const InputView = styled.View`
 export const ZoneView = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
 `;
 
 export const Num2 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
 `;
 
 export const Num3 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -193,7 +194,7 @@ export const Num3 = styled.View`
 export const Num4 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -201,7 +202,7 @@ export const Num4 = styled.View`
 export const Num5 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -209,7 +210,7 @@ export const Num5 = styled.View`
 export const Num6 = styled.View`
     height: 8%;
     width: 14%;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -221,7 +222,7 @@ export const NextBTN = styled.TouchableOpacity`
     margin-bottom: 15%;
     margin-left: 12%;
     margin-top: 10%;
-    borderRadius: 8%;
+    borderRadius: 8;
     background-color: #193A6F;
     color: black;
     align-items: center;

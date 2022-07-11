@@ -31,7 +31,7 @@ export const NextBTN = styled.TouchableOpacity`
     margin-bottom: 15%;
     margin-left: 13%;
     margin-top: 10%;
-    borderRadius: 8%;
+    borderRadius: 8;
     background-color: #2C599D;
     color: black;
     align-items: center;
@@ -80,7 +80,7 @@ export const TitleView = styled.View`
     margin-top: 10%;
     margin-right: 5%;
     background-color: white;
-    align-items: left;
+    align-items: center;
 `;
 
 export const Title = styled.Text`
@@ -100,7 +100,7 @@ export const Description = styled.Text`
 
 
 export const Name = styled.Text`
-    height: 6%;
+    height: 9%;
     width: 33%;
     font-size: 16px;
     fontWeight: bold;
@@ -114,7 +114,7 @@ export const Name = styled.Text`
 `;
 
 export const Email = styled.Text`
-    height: 6%;
+    height: 9%;
     width: 12%;
     font-size: 16px;
     fontWeight: bold;
@@ -122,13 +122,13 @@ export const Email = styled.Text`
     padding-left: 1%;
     text-align: left;
     margin-left: 13%;
-    margin-top: 12%;
+    margin-top: 10%;
     background-color: white;
     z-index: 999;
 `;
 
 export const Cpf = styled.Text`
-    height: 6%;
+    height: 9%;
     width: 9%;
     font-size: 16px;
     fontWeight: bold;
@@ -136,7 +136,7 @@ export const Cpf = styled.Text`
     color: #2C599D;
     text-align: left;
     margin-left: 13%;
-    margin-top: 14%;
+    margin-top: 12%;
     background-color: white;
     z-index: 999;
 `;
@@ -167,7 +167,7 @@ export const InputView = styled.View`
 export const NameView = styled.View`
     height: 13%;
     width: 75%;
-    border-radius: 8px;
+    border-radius: 8;
     position: absolute;
     margin-left: 10%;
     background-color: white;
@@ -177,7 +177,7 @@ export const NameView = styled.View`
 export const MailView = styled.View`
     height: 10%;
     width: 77%;
-    border-radius: 8px;
+    border-radius: 8;
     position: absolute;
     margin-left: 8%;
     background-color: white;
@@ -187,7 +187,7 @@ export const MailView = styled.View`
 export const CpfView = styled.View`
     height: 6%;
     width: 77%;
-    border-radius: 8px;
+    border-radius: 8;
     position: absolute;
     margin-left: 8%;
     background-color: white;

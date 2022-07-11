@@ -31,7 +31,8 @@ export const NextBTN = styled.TouchableOpacity`
     height: 22%;
     margin-top: 5%;
     margin-left: 7%;
-    background-color: black;
+    background-color: #193A6F;
+    border-radius: 8;
     color: black;
     align-items: center;
 `;
@@ -43,22 +44,24 @@ export const ExitBTN = styled.TouchableOpacity`
     margin-left: 7%;
     margin-top: 20%;
     background-color: white;
+    border-radius: 8;
     color: black;
     align-items: center;
-    borderWidth: 1px;
-    borderColor: red;
+    borderWidth: 2px;
+    borderColor: #193A6F;
 `;
 
 export const NotificationBTN = styled.TouchableOpacity`
     position: absolute;
-    width: 91%;
-    height: 13%;
+    width: 87%;
+    height: 2%;
     margin-bottom: 15%;
     margin-left: 4%;
     margin-top: 97%;
     background-color: white;
-    borderWidth: 1px;
-    borderColor: grey;
+    borderWidth: 2px;
+    border-radius: 8;
+    borderColor: #2C599D;
     color: black;
     align-items: center;
 `;
@@ -73,14 +76,16 @@ export const Next = styled.Text`
 
 export const Exit = styled.Text`
     font-size: 18px;
-    color: red;
+    font-weight: bold;
+    color: #193A6F;
     margin-top: 4%;
     text-align: center;
 `;
 
 export const Notification = styled.Text`
-    font-size: 20px;
-    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2C599D;
     margin-top: -7%;
     text-align: center;
     margin-left: -4%;
@@ -236,6 +241,7 @@ export const CpfView = styled.View`
 export const CpfMask = styled.View`
     height: 100%;
     width: 98%;
+    border-radius: 9;
     backgroundColor: #073167;
     position: absolute;
     margin-left: 2%;
@@ -247,6 +253,7 @@ export const CpfMask = styled.View`
 export const NumberMask = styled.View`
     height: 100%;
     width: 98%;
+    border-radius: 9;
     backgroundColor: #073167;
     position: absolute;
     margin-left: 2%;
@@ -258,7 +265,7 @@ export const NumberMask = styled.View`
 export const AlternativeView = styled.View`
     height: 13%;
     width: 93%;
-    border-radius: 8px;
+    border-radius: 8;
     position: absolute;
     margin-left: 2%;
     margin-top: 65%;
@@ -267,16 +274,16 @@ export const AlternativeView = styled.View`
 export const MailIcon = styled.Image`
     width: 26px;
     height: 26px;
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: -80%;
     position: relative;
 `;
 
 export const NextIcon = styled.Image`
-    width: 26px;
-    height: 26px;
-    margin-top: -7%;
-    margin-left: 85%;
+    width: 30px;
+    height: 30px;
+    margin-top: -8%;
+    margin-left: 75%;
 `;
 
 

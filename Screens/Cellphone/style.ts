@@ -4,6 +4,7 @@ export const Container = styled.View`
     flex: 1;
     background-color: white;
     padding: 15px;
+    justifyContent: center;
     align-items: center;
 `;
 
@@ -20,7 +21,7 @@ export const WhatsappBTN = styled.TouchableOpacity`
     position: absolute;
     borderWidth: 2px;
     borderColor: #2C599D;
-    borderRadius: 8%;
+    borderRadius: 8;
     width: 90%;
     height: 3%;
     margin-bottom: 50%;
@@ -44,7 +45,7 @@ export const SmsBTN = styled.TouchableOpacity`
     height: 3%;
     margin-bottom: 65%;
     bottom: 0;
-    borderRadius: 8%;
+    borderRadius: 8;
     background-color: #193A6F;
     color: black;
     align-items: center;
@@ -71,7 +72,7 @@ export const Termos = styled.Text`
     padding: 5%;
     color: grey;
     margin-left: 3%;
-    text-align: left;
+    text-align: center;
 `;
 
 export const WppIcon = styled.Image`
@@ -109,12 +110,12 @@ export const InfoText = styled.View`
     margin-right: 5%;
     margin-left: 5%;
     background-color: white;
-    align-items: left;
+    align-items: center;
 `;
 
 export const Title = styled.Text`
     font-weight: bold;
-    margin-left: 10%;
+    margin-left: 0%;
     font-size: 24px;
     color: #2C599D;
 `;
@@ -137,25 +138,25 @@ export const Reminder = styled.Text`
 `;
 
 export const InputZone = styled.Text`
-    height: 6%;
+    height: 9%;
     font-size: 20px;
     fontWeight: bold;
     color: #2C599D;
     text-align: left;
     margin-left: 13%;
-    margin-top: 2%;
+    margin-top: 1%;
     background-color: white;
     z-index: 999;
 `;
 
 export const InputNumber = styled.Text`
-    height: 6%;
+    height: 9%;
     font-size: 20px;
     fontWeight: bold;
     color: #2C599D;
     text-align: left;
     margin-left: 11%;
-    margin-top: 2%;
+    margin-top: 1%;
     background-color: white;
     z-index: 999;
 `;
@@ -193,7 +194,7 @@ export const ZoneView = styled.View`
 export const NumberView = styled.View`
     height: 11%;
     width: 10%;
-    border-radius: 8px;
+    border-radius: 8;
     position: absolute;
     margin-left: 32%;
     margin-top: 4%;

@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { KeyboardAvoidingView, Platform, StyleSheet, Text, View } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 import {
     Container,
     Header, WhatsappBTN, TitleWts, SmsBTN, TitleSms, Footer, Termos,
@@ -43,7 +44,6 @@ export default function Cellphone({ navigation }) {
                 <InputView>
 
                     <InputZone>DDD</InputZone>
-
                     <ZoneView>
                         <Zone
                             keyboardType="numeric"
@@ -92,7 +92,6 @@ export default function Cellphone({ navigation }) {
                     e ciente da Política de Privacidade.
                 </Termos>
             </Footer>
-
         </Container>
     );
 }
