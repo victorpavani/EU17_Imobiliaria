@@ -36,9 +36,9 @@ export const MapaImage = styled.Image`
 
 export const ImovelType = styled.View`
     width: 100%;
-    height: 10%;
+    height: 15%;
     background-color: white;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-left: 0%;
     flexDirection: row;
     flexWrap: wrap;
@@ -58,9 +58,8 @@ export const TipoImovel = styled.Text`
 
 export const Endereco = styled.View`
     width: 60%;
-    height: 30%;
-    background-color: white;
-    margin-top: 0%;
+    height: 25%;
+    background-color: translucent;
     margin-left: -35%;
     position: relative;
 `;
@@ -69,7 +68,7 @@ export const Localizacao = styled.Text`
     font-size: 13px;
     color: black;
     font-weight: 600;
-    margin-top: 0%;
+    margin-top: -20%;
     margin-left: 5%;
     text-align: left;
     position: relative;
@@ -106,20 +105,22 @@ export const ValorTotal = styled.Text`
 `;
 
 export const OriginalsView = styled.View`
-    width: 35%;
-    height: 62%;
+    width: 25%;
+    height: 40%;
     margin-top: 0%;
-    margin-left: 30%;
+    margin-left: 40%;
     borderRadius: 8%;
     backgroundColor: #F98125;
     position: relative;
+    align-items: center;
+    align-content: center;
 `;
 
 export const Originals = styled.Text`
-    font-size: 13px;
+    font-size: 15px;
     color: white;
     font-weight: 700;
-    margin-top: 4%;
+    margin-top: 6%;
     margin-left: 5%;
     text-align: center;
     position: relative;

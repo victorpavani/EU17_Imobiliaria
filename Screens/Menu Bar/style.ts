@@ -11,7 +11,7 @@ export const Header = styled.View`
     width: 120%;
     height: 13%;
     margin-top: -5%;
-    background-color: white;
+    background-color: red;
     borderWidth: 1px;
     borderColor: grey;
 `;
@@ -19,7 +19,7 @@ export const Header = styled.View`
 export const Footer = styled.View`
     width: 120%;
     height: 20%;
-    background-color: white;
+    background-color: red;
     position: absolute;
     bottom: 0;
 `;

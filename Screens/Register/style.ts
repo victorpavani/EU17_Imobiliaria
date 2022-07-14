@@ -56,7 +56,7 @@ export const Footer = styled.View`
 export const BackIcon = styled.Image`
     width: 28px;
     height: 28px;
-    margin-top: 10%;
+    margin-top: 2%;
     margin-left: 10%;
 `;
 
@@ -100,8 +100,8 @@ export const Description = styled.Text`
 
 
 export const Name = styled.Text`
-    height: 9%;
-    width: 33%;
+    height: 11%;
+    width: 35%;
     font-size: 16px;
     fontWeight: bold;
     color: #2C599D;
@@ -114,7 +114,7 @@ export const Name = styled.Text`
 `;
 
 export const Email = styled.Text`
-    height: 9%;
+    height: 11%;
     width: 12%;
     font-size: 16px;
     fontWeight: bold;
@@ -128,7 +128,7 @@ export const Email = styled.Text`
 `;
 
 export const Cpf = styled.Text`
-    height: 9%;
+    height: 11%;
     width: 9%;
     font-size: 16px;
     fontWeight: bold;
@@ -142,17 +142,17 @@ export const Cpf = styled.Text`
 `;
 
 export const NameInput = styled.TextInput`
-    height: 100%;
+    height: 105%;
 `;
 
 export const MailInput = styled.TextInput`
     height: 100%;
-    margin-left: 2%;
+    margin-left: 0%;
 `;
 
 export const CpfInput = styled.TextInput`
     height: 100%;
-    margin-left: 2%;
+    margin-left: 0%;
 `;
 
 export const InputView = styled.View`
@@ -160,16 +160,16 @@ export const InputView = styled.View`
     flex: 1;
     width: 120%;
     height: 50%;
-    margin-top: 45%;
+    margin-top: 50%;
     background-color: white;
 `;
 
 export const NameView = styled.View`
     height: 13%;
-    width: 75%;
+    width: 77%;
     border-radius: 8;
     position: absolute;
-    margin-left: 10%;
+    margin-left: 8%;
     background-color: white;
     margin-top: 4%;
 `;

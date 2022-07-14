@@ -102,7 +102,7 @@ export const Footer = styled.View`
 export const BackIcon = styled.Image`
     width: 28px;
     height: 28px;
-    margin-top: 10%;
+    margin-top: 0%;
     margin-left: 10%;
 `;
 
@@ -134,7 +134,7 @@ export const Title = styled.Text`
     font-size: 23px;
     color: black;
     margin-left: 22%;
-    margin-top: -5%;;
+    margin-top: -7%;;
 `;
 
 

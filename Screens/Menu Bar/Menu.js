@@ -7,6 +7,7 @@ import Cellphone from '../Cellphone/Cellphone';
 import Register from "../Register/Register";
 import Confirmation from "../Confirmation/Confirmation";
 import Mapa from "../Mapa/Mapa";
+import Perfil from "../Perfil/Perfil";
 
 
 const Tab = createBottomTabNavigator();
@@ -104,7 +105,7 @@ export default function Menu() {
             />
             <Tab.Screen
                 name="Usuario"
-                component={Cellphone}
+                component={Perfil}
                 options={{
                     tabBarLabel: ({ focused, color, fontWeight }) => (
                         <Text style={{ color: focused ? '#193A6F' : '#193A6F', fontWeight: focused ? "bold" : fontWeight, }}>Perfil</Text>

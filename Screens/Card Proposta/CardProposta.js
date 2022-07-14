@@ -4,23 +4,19 @@ import { StyleSheet, Text, View, KeyboardAvoidingView } from 'react-native';
 import { NavigationContainer, TabActions } from '@react-navigation/native';
 import {
     Header,
-    MapaImage,
-    TipoImovel,
     Localizacao,
     Endereco,
-    Infos,
     Aluguel,
     ValorTotal,
-    ImovelType,
-    FavBtn,
-    FavIcon,
-    Originals,
-    OriginalsView
+    Barra,
+    Check,
+    ProgressBar,
+    LineBlue
 } from './style';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import HeaderMain from '../Header Main/HeaderMain';
 
-export default function CardImovel({ navigation }) {
+export default function CardProposta({ navigation }) {
 
     const [Favorito, setFavorito] = useState(false);
 
@@ -28,30 +24,32 @@ export default function CardImovel({ navigation }) {
         <Header>
             <HeaderMain />
 
-            <ImovelType>
-                <TipoImovel>Kitnet/Studio</TipoImovel>
-                <OriginalsView>
-                    <Originals>Originals</Originals>
-                </OriginalsView>
-            </ImovelType>
-
-
             <Endereco>
                 <Localizacao>Avenida Senador Queiros, Centro, São Paulo</Localizacao>
-                <Infos>35 m² - 1 Quarto</Infos>
                 <Aluguel>Aluguel R$1.400</Aluguel>
                 <ValorTotal>Total R$1.887</ValorTotal>
+                <Barra />
             </Endereco>
 
-            <FavBtn onPress={() => setFavorito(!Favorito)}>
-                <FavIcon
-                    source={
-                        Favorito
-                            ? require('../../assets/Icons/favoriteCircleFill.png')
-                            : require('../../assets/Icons/favoriteCircle.png')
-                    }
+            <ProgressBar>
+                <Check
+                    source={require('../../assets/ProgressBar/checked.png')}
                 />
-            </FavBtn>
+                <LineBlue
+                    source={require('../../assets/ProgressBar/linha_azul.png')}
+                />
+
+                {/* <Check
+                    source={require('../../assets/ProgressBar/checked.png')}
+                />
+                <Check
+                    source={require('../../assets/ProgressBar/checked.png')}
+                />
+                <Check
+                    source={require('../../assets/ProgressBar/checked.png')}
+                /> */}
+
+            </ProgressBar>
 
         </Header>
 

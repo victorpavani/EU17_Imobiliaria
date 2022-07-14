@@ -12,7 +12,10 @@ import Mapa from './Screens/Mapa/Mapa';
 import CardImovel from './Screens/Card Movel/CardImovel';
 import HomePage from './Screens/Home Page/HomePage';
 import { Header } from './style';
-
+import Perfil from './Screens/Perfil/Perfil';
+import Visitas from './Screens/Visitas/Visitas';
+import Propostas from './Screens/Propostas/Propostas';
+import PropostasData from './Screens/Proposta w:Card/PropostasData';
 
 
 
@@ -29,7 +32,7 @@ export default function App() {
       >
         <Stack.Screen
           name="Home"
-          component={HeaderMain}
+          component={PropostasData}
         />
 
         <Stack.Screen
@@ -50,6 +53,11 @@ export default function App() {
         <Stack.Screen
           name="Notifications"
           component={ManageNotifications}
+        />
+
+        <Stack.Screen
+          name="HomePage"
+          component={HomePage}
         />
 
       </Stack.Navigator>
