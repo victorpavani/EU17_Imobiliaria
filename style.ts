@@ -156,7 +156,7 @@ export const ZoneView = styled.View`
     width: 15%;
     borderWidth: 1px;
     borderColor: grey;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
 `;
 
@@ -165,7 +165,7 @@ export const Num2 = styled.View`
     width: 15%;
     borderWidth: 1px;
     borderColor: grey;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
 `;
 
@@ -174,7 +174,7 @@ export const Num3 = styled.View`
     width: 15%;
     borderWidth: 1px;
     borderColor: grey;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -184,7 +184,7 @@ export const Num4 = styled.View`
     width: 15%;
     borderWidth: 1px;
     borderColor: grey;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -194,7 +194,7 @@ export const Num5 = styled.View`
     width: 15%;
     borderWidth: 1px;
     borderColor: grey;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;
@@ -204,7 +204,7 @@ export const Num6 = styled.View`
     width: 15%;
     borderWidth: 1px;
     borderColor: grey;
-    border-radius: 8px;
+    border-radius: 8;
     background-color: white;
     margin-top: 0%;
 `;

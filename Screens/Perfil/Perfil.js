@@ -36,7 +36,7 @@ export default function Perfil({ navigation }) {
                 />
                 <PerfilInfo>
                     <Nome>Fernando de Souza Dias</Nome>
-                    <BTNConta>
+                    <BTNConta onPress={() => navigation.navigate('Profile')}>
                         <TitleConta>Gerenciar conta</TitleConta>
                     </BTNConta>
                 </PerfilInfo>
@@ -53,7 +53,7 @@ export default function Perfil({ navigation }) {
                     </InputView>
 
                     <Botao>
-                        <Touch>
+                        <Touch onPress={() => navigation.navigate('Visitas')}>
                             <Icone
                                 source={require('../../assets/Perfil/calendar.png')}
                             />
@@ -62,7 +62,7 @@ export default function Perfil({ navigation }) {
                     </Botao>
 
                     <Proposta>
-                        <Touch>
+                        <Touch onPress={() => navigation.navigate('Propostas')}>
                             <Icone
                                 source={require('../../assets/Perfil/contract.png')}
                             />
@@ -71,7 +71,7 @@ export default function Perfil({ navigation }) {
                     </Proposta>
 
                     <Notification>
-                        <Touch>
+                        <Touch onPress={() => navigation.navigate('Notificacoes')}>
                             <Icone
                                 source={require('../../assets/Perfil/bell.png')}
                             />

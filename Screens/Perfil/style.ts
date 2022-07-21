@@ -39,7 +39,6 @@ export const InputView = styled.View`
     width: 400px;
     height: 60%;
     margin-top: 10%;
-    padding: 0px;
     background-color: white;
 `;
 
@@ -47,7 +46,7 @@ export const InputView = styled.View`
 export const ProfilePic = styled.Image`
     width: 64px;
     height: 64px;
-    borderRadius: 32px;
+    borderRadius: 32;
     margin-left: 10%;
     margin-top: 5%;
 `;
@@ -58,7 +57,6 @@ export const PerfilInfo = styled.View`
     margin-left: 28%;
     margin-top: -14%;
     background-color: translucent;
-    align-items: left;
     align-content: center;
 `;
 
@@ -68,7 +66,6 @@ export const BTNConta = styled.TouchableOpacity`
     margin-top: 4%;
     background-color: translucent;
     align-items: center;
-    align-content: left;
     borderBottomWidth: 1px;
     borderColor: grey;
 `;

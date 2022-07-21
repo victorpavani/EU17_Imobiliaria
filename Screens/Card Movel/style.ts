@@ -7,7 +7,7 @@ export const Header = styled.View`
     height: 450px;
     margin-top: 7%;
     flex: 1;
-    border-radius: 8%;
+    border-radius: 8;
     align-self: center;
     background-color: white;
     align-items: center;
@@ -109,7 +109,7 @@ export const OriginalsView = styled.View`
     height: 40%;
     margin-top: 0%;
     margin-left: 40%;
-    borderRadius: 8%;
+    borderRadius: 8;
     backgroundColor: #F98125;
     position: relative;
     align-items: center;
@@ -131,7 +131,7 @@ export const FavBtn = styled.TouchableOpacity`
     height: 11%;
     margin-top: -18%;
     margin-left: 75%;
-    borderRadius: 23%;
+    borderRadius: 23;
     position: relative;
 `;
 

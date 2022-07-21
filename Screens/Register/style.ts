@@ -115,14 +115,14 @@ export const Name = styled.Text`
 
 export const Email = styled.Text`
     height: 11%;
-    width: 12%;
+    width: 14%;
     font-size: 16px;
     fontWeight: bold;
     color: #2C599D;
     padding-left: 1%;
     text-align: left;
     margin-left: 13%;
-    margin-top: 10%;
+    margin-top: 9%;
     background-color: white;
     z-index: 999;
 `;
@@ -136,7 +136,7 @@ export const Cpf = styled.Text`
     color: #2C599D;
     text-align: left;
     margin-left: 13%;
-    margin-top: 12%;
+    margin-top: 10%;
     background-color: white;
     z-index: 999;
 `;

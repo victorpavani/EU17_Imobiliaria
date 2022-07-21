@@ -86,14 +86,14 @@ export default function Register({ navigation }) {
 
             <Footer>
 
-                <NextBTN onPress={() => navigation.navigate('HomePage')}>
+                <NextBTN onPress={() => navigation.navigate('Propostas')}>
                     <Next>Confirmar</Next>
                 </NextBTN>
 
             </Footer>
 
         </Container>
-    );
+    )
 }
 
 const styles = StyleSheet.create({

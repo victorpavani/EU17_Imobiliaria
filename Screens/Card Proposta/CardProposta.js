@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState, useRef } from 'react';
-import { StyleSheet, Text, View, KeyboardAvoidingView } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { NavigationContainer, TabActions } from '@react-navigation/native';
 import {
     Header,
@@ -11,14 +11,35 @@ import {
     Barra,
     Check,
     ProgressBar,
-    LineBlue
+    LineBlue,
+    Circle,
+    BtnTeste,
+    Teste,
+    Etapas,
+    Propose,
+    ProposeStatus,
+    Avaliacao,
+    AvaliacaoStatus,
+    Doc,
+    DocStatus,
+    Contract,
+    ContractStatus
 } from './style';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import HeaderMain from '../Header Main/HeaderMain';
 
-export default function CardProposta({ navigation }) {
 
-    const [Favorito, setFavorito] = useState(false);
+export default function CardProposta({ navigation }) {
+    const [Proposta, setProposta] = useState(false);
+    const [Credito, setCredito] = useState(false);
+    const [Documento, setDocumento] = useState(false);
+    const [Contrato, setContrato] = useState(false);
+
+    function estados2() {
+        setProposta(true);
+        setCredito(true);
+        setDocumento(true);
+        setContrato(true);
+    }
 
     return (
         <Header>
@@ -27,32 +48,81 @@ export default function CardProposta({ navigation }) {
             <Endereco>
                 <Localizacao>Avenida Senador Queiros, Centro, São Paulo</Localizacao>
                 <Aluguel>Aluguel R$1.400</Aluguel>
-                <ValorTotal>Total R$1.887</ValorTotal>
+                <ValorTotal>Valor total R$1.887</ValorTotal>
                 <Barra />
+
             </Endereco>
 
-            <ProgressBar>
+            <ProgressBar onTouchEnd={() => estados2()}>
                 <Check
-                    source={require('../../assets/ProgressBar/checked.png')}
+                    source={
+                        Proposta
+                            ? require('../../assets/ProgressBar/checked.png')
+                            : require('../../assets/ProgressBar/blue_circle.png')
+                    }
                 />
                 <LineBlue
-                    source={require('../../assets/ProgressBar/linha_azul.png')}
+                    source={
+                        Proposta
+                            ? require('../../assets/ProgressBar/dotted-barline.png')
+                            : require('../../assets/ProgressBar/linha_azul.png')
+                    }
                 />
 
-                {/* <Check
-                    source={require('../../assets/ProgressBar/checked.png')}
+                <Circle
+                    source={
+                        Credito
+                            ? require('../../assets/ProgressBar/checked.png')
+                            : require('../../assets/ProgressBar/blue_circle.png')
+                    }
                 />
-                <Check
-                    source={require('../../assets/ProgressBar/checked.png')}
+
+                <LineBlue
+                    source={
+                        Proposta
+                            ? require('../../assets/ProgressBar/dotted-barline.png')
+                            : require('../../assets/ProgressBar/linha_azul.png')
+                    }
                 />
-                <Check
-                    source={require('../../assets/ProgressBar/checked.png')}
-                /> */}
+                <Circle
+                    source={
+                        Documento
+                            ? require('../../assets/ProgressBar/checked.png')
+                            : require('../../assets/ProgressBar/blue_circle.png')
+                    }
+                />
+
+                <LineBlue
+                    source={
+                        Proposta
+                            ? require('../../assets/ProgressBar/dotted-barline.png')
+                            : require('../../assets/ProgressBar/linha_azul.png')
+                    }
+                />
+                <Circle
+                    source={
+                        Contrato
+                            ? require('../../assets/ProgressBar/checked.png')
+                            : require('../../assets/ProgressBar/blue_circle.png')
+                    }
+                />
 
             </ProgressBar>
+            <Etapas>
+                <Propose>Proposta</Propose>
+                <ProposeStatus>Proposta aceita</ProposeStatus>
+                <Avaliacao>Avaliação de crédito</Avaliacao>
+                <AvaliacaoStatus>Aprovada</AvaliacaoStatus>
+                <Doc>Ver ou enviar documentos</Doc>
+                <DocStatus>Aprovados</DocStatus>
+                <Contract>Ver modelo do contrato</Contract>
+                <ContractStatus>Assinado</ContractStatus>
 
-        </Header>
-
+                {/* <BtnTeste onPress={() => estados2()}>
+                    <Teste>useState</Teste>
+                </BtnTeste> */}
+            </Etapas>
+        </Header >
     )
 }
 

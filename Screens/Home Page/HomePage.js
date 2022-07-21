@@ -63,7 +63,7 @@ export default function HomePage({ navigation }) {
                     <TitleMap>{Filtro ? 'Ver Lista' : 'Ver Mapa'}</TitleMap>
                 </MapBtn>
 
-                <FilterBtn>
+                <FilterBtn onPress={() => navigation.navigate('Perfil')}>
                     <FilterIcon
                         source={require('../../assets/Icons/settings.png')}
                     />

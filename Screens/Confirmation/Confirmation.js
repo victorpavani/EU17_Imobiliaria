@@ -135,7 +135,7 @@ export default function Confirmation({ navigation }) {
 
             <Footer>
 
-                <NextBTN onPress={() => navigation.navigate('Register')}>
+                <NextBTN onPress={() => navigation.navigate('Perfil')}>
                     <Next>Confirmar</Next>
                 </NextBTN>
 

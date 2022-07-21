@@ -110,7 +110,6 @@ export const InfoPesquisa = styled.View`
     padding-left: 5%;
     padding-top: 2%;
     backgroundColor: #F9FBFF;
-    position: abslute;
     margin-top: 44%;
     margin-left: 2%;
     overflow: hidden;

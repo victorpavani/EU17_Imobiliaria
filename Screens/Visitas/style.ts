@@ -141,7 +141,7 @@ export const Footer = styled.View`
 export const ProcurarImovel = styled.TouchableOpacity`
     height: 22%;
     width: 70%;
-    border-radius: 8%;
+    border-radius: 8;
     margin-left: 15%;
     margin-top: 20%;
     background-color: #193A6F;

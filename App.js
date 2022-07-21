@@ -32,7 +32,7 @@ export default function App() {
       >
         <Stack.Screen
           name="Home"
-          component={PropostasData}
+          component={Cellphone}
         />
 
         <Stack.Screen
@@ -46,6 +46,11 @@ export default function App() {
         />
 
         <Stack.Screen
+          name="HomePage"
+          component={HomePage}
+        />
+
+        <Stack.Screen
           name="Profile"
           component={Profile}
         />
@@ -56,8 +61,23 @@ export default function App() {
         />
 
         <Stack.Screen
-          name="HomePage"
-          component={HomePage}
+          name="Perfil"
+          component={Perfil}
+        />
+
+        <Stack.Screen
+          name="Visitas"
+          component={Visitas}
+        />
+
+        <Stack.Screen
+          name="Propostas"
+          component={PropostasData}
+        />
+
+        <Stack.Screen
+          name="Notificacoes"
+          component={ManageNotifications}
         />
 
       </Stack.Navigator>

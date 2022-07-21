@@ -143,7 +143,7 @@ export const Zone5 = styled.TextInput`
     font-size: 30px;
     text-align: center;
     borderWidth: 1px;
-    border-radius: 8px;
+    border-radius: 8;
 `;
 
 export const Zone6 = styled.TextInput`
