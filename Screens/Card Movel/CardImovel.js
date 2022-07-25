@@ -15,7 +15,8 @@ import {
     FavBtn,
     FavIcon,
     Originals,
-    OriginalsView
+    OriginalsView,
+    FavView
 } from './style';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import HeaderMain from '../Header Main/HeaderMain';
@@ -43,16 +44,17 @@ export default function CardImovel({ navigation }) {
                 <ValorTotal>Total R$1.887</ValorTotal>
             </Endereco>
 
-            <FavBtn onPress={() => setFavorito(!Favorito)}>
-                <FavIcon
-                    source={
-                        Favorito
-                            ? require('../../assets/Icons/favoriteCircleFill.png')
-                            : require('../../assets/Icons/favoriteCircle.png')
-                    }
-                />
-            </FavBtn>
-
+            <FavView>
+                <FavBtn onPress={() => setFavorito(!Favorito)}>
+                    <FavIcon
+                        source={
+                            Favorito
+                                ? require('../../assets/Icons/favoriteCircleFill.png')
+                                : require('../../assets/Icons/favoriteCircle.png')
+                        }
+                    />
+                </FavBtn>
+            </FavView>
         </Header>
 
     )

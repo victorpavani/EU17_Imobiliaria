@@ -37,15 +37,11 @@ export default function Mapa({ navigation }) {
 
                 </SearchBTN>
 
-                <MapBtn onPress={() => setFiltro(!Filtro)}>
+                <MapBtn onPress={() => navigation.navigate('HomePage')}>
                     <MapIcon
-                        source={
-                            Filtro
-                                ? require('../../assets/Icons/list.png')
-                                : require('../../assets/Icons/maps.png')
-                        }
+                        source={require('../../assets/Icons/list.png')}
                     />
-                    <TitleMap>{Filtro ? 'Ver Lista' : 'Ver Mapa'}</TitleMap>
+                    <TitleMap>Ver Lista</TitleMap>
                 </MapBtn>
 
                 <FilterBtn>

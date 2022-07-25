@@ -86,7 +86,7 @@ export default function Register({ navigation }) {
 
             <Footer>
 
-                <NextBTN onPress={() => navigation.navigate('Propostas')}>
+                <NextBTN onPress={() => navigation.navigate('HomePage')}>
                     <Next>Confirmar</Next>
                 </NextBTN>
 

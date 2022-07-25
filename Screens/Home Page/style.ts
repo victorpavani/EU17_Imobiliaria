@@ -28,7 +28,7 @@ export const Placeholder = styled.Text`
     font-size: 18px;
     color: #909090;
     margin-left: 22%;
-    margin-top: -8%;
+    margin-top: -7%;
 
 `;
 

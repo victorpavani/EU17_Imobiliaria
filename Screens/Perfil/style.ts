@@ -12,9 +12,7 @@ export const Header = styled.View`
     width: 120%;
     height: 15%;
     margin-top: 10%;
-    background-color: #b5cdfc;
-    borderWidth: 1px;
-    borderColor: grey;
+    background-color: #F9FBFF;
 `;
 
 export const Form = styled.View`
@@ -52,7 +50,7 @@ export const ProfilePic = styled.Image`
 `;
 
 export const PerfilInfo = styled.View`
-    width: 67%;
+    width: 65%;
     height: 40%;
     margin-left: 28%;
     margin-top: -14%;
@@ -81,13 +79,14 @@ export const Nome = styled.Text`
     font-weight: bold;
     color: #2C599D;
     text-align: center;
+    text-align: left;
 `;
 
 export const Botao = styled.View`
-    height: 12%;
+    height: 5%;
     width: 90%;
     margin-left: 3%;
-    margin-top: -32%;
+    margin-top: -87%;
     margin-bottom: 2%;
     flexDirection: row;
     flexWrap: wrap;
@@ -96,7 +95,7 @@ export const Botao = styled.View`
 `;
 
 export const Proposta = styled.View`
-    height: 12%;
+    height: 5%;
     width: 90%;
     margin-top: 3%;
     margin-bottom: 2%;
@@ -106,7 +105,7 @@ export const Proposta = styled.View`
 `;
 
 export const Notification = styled.View`
-    height: 12%;
+    height: 5%;
     width: 90%;
     margin-top: 3%;
     margin-left: 3%;
@@ -115,7 +114,7 @@ export const Notification = styled.View`
 `;
 
 export const Help = styled.View`
-    height: 12%;
+    height: 5%;
     width: 90%;
     margin-top: 15%;
     margin-left: 3%;
@@ -124,7 +123,7 @@ export const Help = styled.View`
 `;
 
 export const Anunciar = styled.View`
-    height: 12%;
+    height: 5%;
     width: 90%;
     margin-top: 5%;
     margin-left: 3%;
@@ -133,7 +132,7 @@ export const Anunciar = styled.View`
 `;
 
 export const Indicar = styled.View`
-    height: 12%;
+    height: 5%;
     width: 90%;
     margin-top: 5%;
     margin-left: 3%;
@@ -142,7 +141,7 @@ export const Indicar = styled.View`
 `;
 
 export const About = styled.View`
-    height: 12%;
+    height: 5%;
     width: 90%;
     margin-top: 5%;
     margin-left: 3%;
@@ -151,7 +150,7 @@ export const About = styled.View`
 `;
 
 export const Termos = styled.View`
-    height: 12%;
+    height: 5%;
     width: 90%;
     margin-top: 5%;
     margin-left: 3%;
@@ -162,6 +161,7 @@ export const Termos = styled.View`
 export const TitleBTN = styled.Text`
     font-size: 16px;
     color: #193A6F;
+    margin-top: -0.5%;
     margin-left: 4%;
 `;
 

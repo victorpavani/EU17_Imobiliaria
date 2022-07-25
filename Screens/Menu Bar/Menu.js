@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 
 
 import Cellphone from '../Cellphone/Cellphone';
@@ -8,9 +10,11 @@ import Register from "../Register/Register";
 import Confirmation from "../Confirmation/Confirmation";
 import Mapa from "../Mapa/Mapa";
 import Perfil from "../Perfil/Perfil";
-
+import HomePage from "../Home Page/HomePage";
+import { StackActions } from "@react-navigation/native";
 
 const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
 
 
 export default function Menu() {
@@ -39,7 +43,7 @@ export default function Menu() {
             }}>
             <Tab.Screen
                 name="Pesquisar"
-                component={Mapa}
+                component={HomePage}
                 options={{
                     tabBarLabel: ({ focused, color, fontWeight }) => (
                         <Text style={{ color: focused ? '#193A6F' : '#193A6F', fontWeight: focused ? "bold" : fontWeight, }}>Busca</Text>
@@ -126,5 +130,5 @@ export default function Menu() {
                 }}
             />
         </Tab.Navigator>
-    )
+    );
 }

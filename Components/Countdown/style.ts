@@ -234,13 +234,3 @@ export const Next = styled.Text`
     margin-top: 3%;
     text-align: center;
 `;
-
-//TIMER
-
-export const Waiting = styled.Text`
-    font-size: 16px;
-    font-weight: bold;
-    color: #2C599D;
-    margin-top: -53%;
-    text-align: center;
-`;

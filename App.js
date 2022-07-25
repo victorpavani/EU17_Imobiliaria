@@ -16,6 +16,7 @@ import Perfil from './Screens/Perfil/Perfil';
 import Visitas from './Screens/Visitas/Visitas';
 import Propostas from './Screens/Propostas/Propostas';
 import PropostasData from './Screens/Proposta w:Card/PropostasData';
+import CounterApp from './Components/Countdown/Countdown';
 
 
 
@@ -24,7 +25,6 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
@@ -47,7 +47,7 @@ export default function App() {
 
         <Stack.Screen
           name="HomePage"
-          component={HomePage}
+          component={Menu}
         />
 
         <Stack.Screen
@@ -78,6 +78,11 @@ export default function App() {
         <Stack.Screen
           name="Notificacoes"
           component={ManageNotifications}
+        />
+
+        <Stack.Screen
+          name="Mapa"
+          component={Mapa}
         />
 
       </Stack.Navigator>

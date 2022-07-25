@@ -44,88 +44,83 @@ export default function Perfil({ navigation }) {
 
 
             <Form>
-                <ScrollView style={styles.scrollView} /* contentContainerStyle={styles.contentContainer} */
-                    scrollEnabled={true}
-                    showsVerticalScrollIndicator={false}
-                >
-                    <InputView>
-                        <Description>Para alugar ou comprar</Description>
-                    </InputView>
+                <InputView>
+                    <Description>Para alugar ou comprar</Description>
+                </InputView>
 
-                    <Botao>
-                        <Touch onPress={() => navigation.navigate('Visitas')}>
-                            <Icone
-                                source={require('../../assets/Perfil/calendar.png')}
-                            />
-                            <TitleBTN>Visitas</TitleBTN>
-                        </Touch>
-                    </Botao>
+                <Botao>
+                    <Touch onPress={() => navigation.navigate('Visitas')}>
+                        <Icone
+                            source={require('../../assets/Perfil/calendar.png')}
+                        />
+                        <TitleBTN>Visitas</TitleBTN>
+                    </Touch>
+                </Botao>
 
-                    <Proposta>
-                        <Touch onPress={() => navigation.navigate('Propostas')}>
-                            <Icone
-                                source={require('../../assets/Perfil/contract.png')}
-                            />
-                            <TitleBTN>Propostas</TitleBTN>
-                        </Touch>
-                    </Proposta>
+                <Proposta>
+                    <Touch onPress={() => navigation.navigate('Propostas')}>
+                        <Icone
+                            source={require('../../assets/Perfil/contract.png')}
+                        />
+                        <TitleBTN>Propostas</TitleBTN>
+                    </Touch>
+                </Proposta>
 
-                    <Notification>
-                        <Touch onPress={() => navigation.navigate('Notificacoes')}>
-                            <Icone
-                                source={require('../../assets/Perfil/bell.png')}
-                            />
-                            <TitleBTN>Notificações</TitleBTN>
-                        </Touch>
-                    </Notification>
+                <Notification>
+                    <Touch onPress={() => navigation.navigate('Notificacoes')}>
+                        <Icone
+                            source={require('../../assets/Perfil/bell.png')}
+                        />
+                        <TitleBTN>Notificações</TitleBTN>
+                    </Touch>
+                </Notification>
 
-                    <Help>
-                        <Touch>
-                            <Icone
-                                source={require('../../assets/Perfil/help.png')}
-                            />
-                            <TitleBTN>Ajuda</TitleBTN>
-                        </Touch>
-                    </Help>
+                <Help>
+                    <Touch>
+                        <Icone
+                            source={require('../../assets/Perfil/help.png')}
+                        />
+                        <TitleBTN>Ajuda</TitleBTN>
+                    </Touch>
+                </Help>
 
-                    <Anunciar>
-                        <Touch>
-                            <Icone
-                                source={require('../../assets/Perfil/assistance.png')}
-                            />
-                            <TitleBTN>Anunciar imóvel</TitleBTN>
-                        </Touch>
-                    </Anunciar>
+                <Anunciar>
+                    <Touch>
+                        <Icone
+                            source={require('../../assets/Perfil/assistance.png')}
+                        />
+                        <TitleBTN>Anunciar imóvel</TitleBTN>
+                    </Touch>
+                </Anunciar>
 
-                    <Indicar>
-                        <Touch>
-                            <Icone
-                                source={require('../../assets/Perfil/home-bold.png')}
-                            />
-                            <TitleBTN>Indicar imóveis</TitleBTN>
-                        </Touch>
-                    </Indicar>
+                <Indicar>
+                    <Touch>
+                        <Icone
+                            source={require('../../assets/Perfil/home-bold.png')}
+                        />
+                        <TitleBTN>Indicar imóveis</TitleBTN>
+                    </Touch>
+                </Indicar>
 
-                    <About>
-                        <Touch>
-                            <Icone
-                                source={require('../../assets/Perfil/group.png')}
-                            />
-                            <TitleBTN>Sobre nós</TitleBTN>
-                        </Touch>
-                    </About>
+                <About>
+                    <Touch>
+                        <Icone
+                            source={require('../../assets/Perfil/group.png')}
+                        />
+                        <TitleBTN>Sobre nós</TitleBTN>
+                    </Touch>
+                </About>
 
 
-                    <Termos>
-                        <Touch>
-                            <Icone
-                                source={require('../../assets/Perfil/padlock.png')}
-                            />
-                            <TitleBTN>Termos e privacidade</TitleBTN>
-                        </Touch>
-                    </Termos>
+                <Termos>
+                    <Touch>
+                        <Icone
+                            source={require('../../assets/Perfil/padlock.png')}
+                        />
+                        <TitleBTN>Termos e privacidade</TitleBTN>
+                    </Touch>
+                </Termos>
 
-                </ScrollView>
             </Form>
         </Container>
 

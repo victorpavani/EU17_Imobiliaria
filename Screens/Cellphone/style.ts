@@ -55,7 +55,7 @@ export const TitleSms = styled.Text`
     font-size: 16px;
     font-weight: bold;
     color: white;
-    margin-top: 4%;
+    margin-top: 3%;
     text-align: center;
 `;
 

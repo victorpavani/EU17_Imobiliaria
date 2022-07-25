@@ -23,24 +23,10 @@ import {
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import CardImovel from '../Card Movel/CardImovel';
 
+
 export default function HomePage({ navigation }) {
 
-    const [Filtro, setFiltro] = useState(false);
 
-    const DATA = [
-        {
-            id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-            title: 'First Item',
-        },
-        {
-            id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-            title: 'Second Item',
-        },
-        {
-            id: '58694a0f-3da1-471f-bd96-145571e29d72',
-            title: 'Third Item',
-        },
-    ];
     return (
         <Container>
             <Header>
@@ -52,15 +38,11 @@ export default function HomePage({ navigation }) {
 
                 </SearchBTN>
 
-                <MapBtn onPress={() => setFiltro(!Filtro)}>
+                <MapBtn onPress={() => navigation.navigate('Mapa')}>
                     <MapIcon
-                        source={
-                            Filtro
-                                ? require('../../assets/Icons/list.png')
-                                : require('../../assets/Icons/maps.png')
-                        }
+                        source={require('../../assets/Icons/maps.png')}
                     />
-                    <TitleMap>{Filtro ? 'Ver Lista' : 'Ver Mapa'}</TitleMap>
+                    <TitleMap>Ver Mapa</TitleMap>
                 </MapBtn>
 
                 <FilterBtn onPress={() => navigation.navigate('Perfil')}>
@@ -122,8 +104,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#F9FBFF',
         height: 100,
         width: 380,
-        marginTop: 0,
-        paddingTop: 0,
-        overflow: 'visible',
+
+        overflow: 'hidden',
     },
 });

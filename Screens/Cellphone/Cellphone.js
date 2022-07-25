@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import {
@@ -23,6 +23,7 @@ import {
 
 export default function Cellphone({ navigation }) {
     const [isInputFocused, setInputFocused] = useState({ input1: false, input2: false });
+    const ref_input2 = useRef();
 
     return (
         <Container>
@@ -49,9 +50,9 @@ export default function Cellphone({ navigation }) {
                             keyboardType="numeric"
                             maxLength={2}
                             style={isInputFocused.input1 ? styles.input : styles.inputFocused}
-                            onChangeText={() => { }}
                             onFocus={() => setInputFocused((prev) => ({ ...prev, input1: true }))}
                             onBlur={() => setInputFocused((prev) => ({ ...prev, input1: false }))}
+                            onSubmitEditing={() => ref_input2.current.focus()}
                         />
                     </ZoneView>
 
@@ -65,6 +66,7 @@ export default function Cellphone({ navigation }) {
                             onChangeText={() => { }}
                             onFocus={() => setInputFocused((prev) => ({ ...prev, input2: true }))}
                             onBlur={() => setInputFocused((prev) => ({ ...prev, input2: false }))}
+                            ref={ref_input2}
                         />
                     </NumberView>
 

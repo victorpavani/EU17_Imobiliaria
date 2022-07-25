@@ -6,7 +6,6 @@ export const Header = styled.View`
     width: 90%;
     height: 450px;
     margin-top: 7%;
-    flex: 1;
     border-radius: 8;
     align-self: center;
     background-color: white;
@@ -126,11 +125,20 @@ export const Originals = styled.Text`
     position: relative;
 `;
 
+export const FavView = styled.View`
+    width: 13%;
+    height: 11%;
+    background-color: white;
+    margin-left: 70%;
+    margin-top: -20%;
+    margin-bottom: 5%;
+`;
+
 export const FavBtn = styled.TouchableOpacity`
     width: 14%;
     height: 11%;
-    margin-top: -18%;
-    margin-left: 75%;
+    margin-top: 0%;
+    margin-right: 0%;
     borderRadius: 23;
     position: relative;
 `;
