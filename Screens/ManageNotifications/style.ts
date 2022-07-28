@@ -135,11 +135,11 @@ export const OptionTitle = styled.Text`
 `;
 
 export const MensagensInformativas = styled.View`
-    height: 65%;
+    height: 25%;
     width: 90%;
     position: absolute;
     margin-left: 4%;
-    margin-top: 6%;
+    margin-top: 41%;
 `;
 
 export const MensagensPromocionais = styled.View`
@@ -147,7 +147,7 @@ export const MensagensPromocionais = styled.View`
     width: 90%;
     position: absolute;
     margin-left: 4%;
-    margin-top: 65%;
+    margin-top: 105%;
 `;
 
 export const Pesquisas = styled.View`
@@ -155,7 +155,7 @@ export const Pesquisas = styled.View`
     width: 90%;
     position: absolute;
     margin-left: 4%;
-    margin-top: 128%;
+    margin-top: 168%;
 `;
 
 export const ComunicacoesEspeciais = styled.View`
@@ -163,7 +163,7 @@ export const ComunicacoesEspeciais = styled.View`
     width: 90%;
     position: absolute;
     margin-left: 4%;
-    margin-top: 158%;
+    margin-top: 188%;
 `;
 
 export const SMS = styled.View`
@@ -188,4 +188,69 @@ export const Napp = styled.View`
     position: absolute;
     margin-top: 45%;
     flexDirection: row;
+`;
+
+export const AllProducts = styled.View`
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    margin-top: 5%;
+    flexDirection: row;
+    background-color: white;
+`;
+
+export const Produtos = styled.View`
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    margin-top: 15%;
+    flexDirection: row;
+    background-color: translucent;
+`;
+
+export const SwProduto = styled.View`
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    margin-top: 2%;
+    flexDirection: row;
+    margin-left: 3%;
+    `;
+
+export const Inquilino = styled.TouchableOpacity`
+    height: 55%;
+    width: 25%;
+    background-color: translucent;
+    border-width: 2px;
+    border-color: #2C599D;
+    margin-left: 5%;
+    borderRadius: 8;
+`;
+
+export const Proprietario = styled.TouchableOpacity`
+    height: 55%;
+    width: 25%;
+    background-color: translucent;
+    border-width: 2px;
+    border-color: #2C599D;
+    margin-left: 5%;
+    borderRadius: 8;
+`;
+
+export const Afiliado = styled.TouchableOpacity`
+    height: 55%;
+    width: 25%;
+    background-color: translucent;
+    border-width: 2px;
+    border-color: #2C599D;
+    margin-left: 5%;
+    borderRadius: 8;
+`;
+
+export const Inquilino2 = styled.Text`
+    font-size: 12px;
+    color: #2C599D;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 7%;
 `;

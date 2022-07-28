@@ -22,14 +22,24 @@ import {
     Anunciar,
     Indicar,
     About,
-    Termos
+    Termos,
+    LogoVw
 } from './style';
 import Menu from '../Menu Bar/Menu';
+import LogoSVG from '../../assets/logomarca.svg'
 
 export default function Perfil({ navigation }) {
 
     return (
         <Container>
+            {/* */}
+            <LogoVw>
+                <LogoSVG
+                    height={110}
+                    width={180}
+                    style={{ marginTop: '-11%', marginLeft: '25%' }}
+                />
+            </LogoVw>
             <Header>
                 <ProfilePic
                     source={require('../../assets/Smiling.jpeg')}

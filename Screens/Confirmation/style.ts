@@ -239,8 +239,8 @@ export const Next = styled.Text`
 
 export const Waiting = styled.Text`
     font-size: 16px;
-    font-weight: bold;
-    color: #2C599D;
+    font-weight: normal;
+    color: #808080;
     margin-top: -53%;
     text-align: center;
 `;

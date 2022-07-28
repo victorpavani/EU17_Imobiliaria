@@ -30,7 +30,7 @@ import {
     Waiting
 } from './style'
 import CountDownTimer from 'react-native-countdown-timer-hooks';
-
+import LogoSVG from '../../assets/logomarca.svg'
 
 export default function Confirmation({ navigation }) {
     const [isInputFocused, setInputFocused] = useState({
@@ -65,6 +65,11 @@ export default function Confirmation({ navigation }) {
                         source={require('../../assets/Icons/arrow-left.png')}
                     />
                 </BackBtn>
+                <LogoSVG
+                    width={180}
+                    height={110}
+                    style={{ marginLeft: '25%', position: 'absolute' }}
+                />
             </Header>
 
             <PhoneInfo>
@@ -209,8 +214,8 @@ export default function Confirmation({ navigation }) {
                         }}
                         textStyle={{
                             fontSize: 17,
-                            color: '#2C599D',
-                            fontWeight: 'bold',
+                            color: '#808080',
+                            fontWeight: 'normal',
                             letterSpacing: 0.25,
                         }}
                     />

@@ -20,6 +20,7 @@ import {
     NameInput,
     Description
 } from './style'
+import LogoSVG from '../../assets/logomarca.svg'
 
 export default function Register({ navigation }) {
 
@@ -35,6 +36,11 @@ export default function Register({ navigation }) {
                         source={require('../../assets/Icons/arrow-left.png')}
                     />
                 </BackBtn>
+                <LogoSVG
+                    width={180}
+                    height={110}
+                    style={{ marginLeft: '25%', position: 'absolute' }}
+                />
             </Header>
 
             <Form>

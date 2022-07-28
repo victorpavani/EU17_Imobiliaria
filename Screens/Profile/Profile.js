@@ -30,6 +30,7 @@ import {
     NumberMask
 } from './style';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import LogoSVG from '../../assets/logo2.svg'
 
 export default function Profile({ navigation }) {
 
@@ -87,7 +88,7 @@ export default function Profile({ navigation }) {
                                 placeholder='(19)99538-7196'
                                 editable={false}
                                 selectTextOnFocus={false}
-                                style={isInputFocused.input2 ? styles.input : styles.inputFocused}
+                                style={{ borderWidth: 2, borderRadius: 9, borderColor: '#5B84C4', paddingLeft: 3 }}
                                 onChangeText={() => { }}
                                 onFocus={() => setInputFocused((prev) => ({ ...prev, input2: true }))}
                                 onBlur={() => setInputFocused((prev) => ({ ...prev, input2: false }))}
@@ -102,7 +103,7 @@ export default function Profile({ navigation }) {
                                 placeholder='vicpavanii@gmail.com'
                                 editable={false}
                                 selectTextOnFocus={false}
-                                style={isInputFocused.input3 ? styles.input : styles.inputFocused}
+                                style={{ borderRadius: 9, borderWidth: 2, borderColor: '#5B84C4', paddingLeft: 3 }}
                                 onChangeText={() => { }}
                                 onFocus={() => setInputFocused((prev) => ({ ...prev, input3: true }))}
                                 onBlur={() => setInputFocused((prev) => ({ ...prev, input3: false }))}
@@ -145,7 +146,11 @@ export default function Profile({ navigation }) {
                     <ExitBTN>
                         <Exit>Sair da conta</Exit>
                     </ExitBTN>
-
+                    <LogoSVG
+                        width={180}
+                        height={70}
+                        style={{ marginTop: '35%', marginLeft: '25%' }}
+                    />
 
                 </Footer>
 

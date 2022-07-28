@@ -18,8 +18,11 @@ import {
     NumberView,
     InputZone,
     InputNumber,
-    InfoText
+    InfoText,
+    Logomarca
 } from './style'
+
+import LogoSVG from '../../assets/logomarca.svg'
 
 export default function Cellphone({ navigation }) {
     const [isInputFocused, setInputFocused] = useState({ input1: false, input2: false });
@@ -28,6 +31,11 @@ export default function Cellphone({ navigation }) {
     return (
         <Container>
             <Header>
+                <LogoSVG
+                    width={180}
+                    height={110}
+                    style={{ marginLeft: '25%' }}
+                />
             </Header>
 
             <PhoneInfo>

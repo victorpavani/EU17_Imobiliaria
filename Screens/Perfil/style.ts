@@ -11,7 +11,7 @@ export const Container = styled.View`
 export const Header = styled.View`
     width: 120%;
     height: 15%;
-    margin-top: 10%;
+    margin-top: 0%;
     background-color: #F9FBFF;
 `;
 
@@ -86,7 +86,7 @@ export const Botao = styled.View`
     height: 5%;
     width: 90%;
     margin-left: 3%;
-    margin-top: -87%;
+    margin-top: -70%;
     margin-bottom: 2%;
     flexDirection: row;
     flexWrap: wrap;
@@ -177,4 +177,11 @@ export const Touch = styled.TouchableOpacity`
     height: 100%;
     flexDirection: row;
     flexWrap: wrap;
+`;
+
+export const LogoVw = styled.View`
+    height: 5%;
+    margin-top: 10%;
+    width: 100%;
+    background-color: white;
 `;

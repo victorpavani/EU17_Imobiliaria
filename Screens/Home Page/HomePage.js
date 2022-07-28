@@ -22,7 +22,7 @@ import {
 } from './style';
 import { FlatList, ScrollView } from 'react-native-gesture-handler';
 import CardImovel from '../Card Movel/CardImovel';
-
+import LogoSVG from '../../assets/logomarca.svg'
 
 export default function HomePage({ navigation }) {
 
@@ -30,6 +30,11 @@ export default function HomePage({ navigation }) {
     return (
         <Container>
             <Header>
+                <LogoSVG
+                    width={180}
+                    height={110}
+                    style={{ marginBottom: '-22%', marginLeft: '25%' }}
+                />
                 <SearchBTN>
                     <SearchIcon
                         source={require('../../assets/Icons/search.png')}

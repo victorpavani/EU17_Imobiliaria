@@ -21,6 +21,13 @@ import {
     MensagensPromocionais,
     Pesquisas,
     ComunicacoesEspeciais,
+    AllProducts,
+    SwProduto,
+    Produtos,
+    Inquilino,
+    Inquilino2,
+    Proprietario,
+    Afiliado,
 } from './style';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
@@ -39,6 +46,7 @@ export default function ManageNotifications({ navigation }) {
     const [isEnabled5, setIsEnabled5] = useState(false);
     const [isEnabled6, setIsEnabled6] = useState(false);
     const [isEnabled7, setIsEnabled7] = useState(false);
+    const [isEnabled8, setIsEnabled8] = useState(false);
 
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
     const toggleSwitch2 = () => setIsEnabled2(previousState2 => !previousState2);
@@ -47,6 +55,8 @@ export default function ManageNotifications({ navigation }) {
     const toggleSwitch5 = () => setIsEnabled5(previousState5 => !previousState5);
     const toggleSwitch6 = () => setIsEnabled6(previousState6 => !previousState6);
     const toggleSwitch7 = () => setIsEnabled7(previousState7 => !previousState7);
+    const toggleSwitch8 = () => setIsEnabled8(previousState8 => !previousState8);
+
 
     return (
         <Container>
@@ -71,8 +81,31 @@ export default function ManageNotifications({ navigation }) {
 
 
                         <Description>Escolha quais comunicações você quer receber da 17imóveis</Description>
-                        {/* <Options> Aplicar para todos os produtos</Options>
-                        <DescOption>Inquilino, Proprietário e Indica Aí</DescOption> */}
+
+                        <AllProducts>
+                            <SwProduto>
+                                <GeneralOptions>Aplicar para todos os produtos</GeneralOptions>
+                                <Switch
+                                    trackColor={{ false: "grey", true: "#073167" }}
+                                    thumbColor={isEnabled8 ? "white" : "white"}
+                                    ios_backgroundColor="grey"
+                                    onValueChange={toggleSwitch8}
+                                    value={isEnabled8}
+                                    style={{ marginLeft: '9%', marginTop: '-0.5%' }}
+                                />
+                            </SwProduto>
+                            <Produtos>
+                                <Inquilino>
+                                    <Inquilino2>Inquilino</Inquilino2>
+                                </Inquilino>
+                                <Proprietario>
+                                    <Inquilino2>Proprietário</Inquilino2>
+                                </Proprietario>
+                                <Afiliado>
+                                    <Inquilino2>Afiliado</Inquilino2>
+                                </Afiliado>
+                            </Produtos>
+                        </AllProducts>
 
                         <MensagensInformativas>
                             <OptionTitle>Mensagens informativas</OptionTitle>

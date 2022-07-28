@@ -96,7 +96,7 @@ export const Footer = styled.View`
     height: 26%;
     background-color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 60;
 `;
 
 export const BackIcon = styled.Image`
@@ -210,7 +210,7 @@ export const InputView = styled.View`
     flex: 1;
     width: 120%;
     height: 50%;
-    margin-top: 20%;
+    margin-top: 8%;
     background-color: white;
 `;
 
@@ -242,11 +242,11 @@ export const CpfMask = styled.View`
     height: 100%;
     width: 98%;
     border-radius: 9;
-    backgroundColor: #073167;
+    backgroundColor: #5B84C4;
     position: absolute;
     margin-left: 2%;
     margin-top: 15%;
-    opacity: 0.2;
+    opacity: 0.3;
     z-index: 99999;
 `;
 
@@ -254,11 +254,11 @@ export const NumberMask = styled.View`
     height: 100%;
     width: 98%;
     border-radius: 9;
-    backgroundColor: #073167;
+    backgroundColor: #5B84C4;
     position: absolute;
     margin-left: 2%;
     margin-top: 2%;
-    opacity: 0.2;
+    opacity: 0.3;
     z-index: 99999;
 `;
 

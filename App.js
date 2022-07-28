@@ -17,6 +17,7 @@ import Visitas from './Screens/Visitas/Visitas';
 import Propostas from './Screens/Propostas/Propostas';
 import PropostasData from './Screens/Proposta w:Card/PropostasData';
 import CounterApp from './Components/Countdown/Countdown';
+import Notifications from './Screens/Notifications/Notifications';
 
 
 
@@ -32,7 +33,7 @@ export default function App() {
       >
         <Stack.Screen
           name="Home"
-          component={Cellphone}
+          component={Notifications}
         />
 
         <Stack.Screen
