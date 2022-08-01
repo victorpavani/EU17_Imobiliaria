@@ -109,7 +109,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#F9FBFF',
         height: 100,
         width: 380,
-
         overflow: 'hidden',
     },
 });

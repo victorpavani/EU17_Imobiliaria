@@ -18,6 +18,7 @@ import Propostas from './Screens/Propostas/Propostas';
 import PropostasData from './Screens/Proposta w:Card/PropostasData';
 import CounterApp from './Components/Countdown/Countdown';
 import Notifications from './Screens/Notifications/Notifications';
+import Imovel from './Screens/Imovel/Imovel';
 
 
 
@@ -33,7 +34,7 @@ export default function App() {
       >
         <Stack.Screen
           name="Home"
-          component={Notifications}
+          component={Imovel}
         />
 
         <Stack.Screen
